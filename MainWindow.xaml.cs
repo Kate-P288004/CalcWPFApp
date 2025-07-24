@@ -21,6 +21,7 @@ namespace CalcWPFApp
 
                 ResultText.Text = $"Result: {result}";
 
+                string path = @"C:\Users\p288004\Desktop\calc.txt";
                 File.WriteAllText("calc.txt", $"Multiplication Result: {result}");
             }
             catch
