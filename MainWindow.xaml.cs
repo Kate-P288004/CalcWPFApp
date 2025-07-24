@@ -41,6 +41,8 @@ namespace CalcWPFApp
 
                 File.WriteAllText(path, $"Multiplication Result: {result}");
 
+                MessageBox.Show($"Result saved to {path}");
+
             }
 
             catch
