@@ -1,0 +1,23 @@
+﻿<Window x:Class="CalcWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcWPFApp"
+        mc:Ignorable="d"
+        Title="Multiplication Calculator" Height="250" Width="300">
+
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Enter first number:" Margin="0,0,0,5"/>
+            <TextBox Name="Input1" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Enter second number:" Margin="0,0,0,5"/>
+            <TextBox Name="Input2" Margin="0,0,0,10"/>
+
+            <Button Content="Multiply" Click="Multiply_Click" Margin="0,0,0,10"/>
+
+            <TextBlock Name="ResultText" FontWeight="Bold" />
+        </StackPanel>
+    </Grid>
+</Window>
